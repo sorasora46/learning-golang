@@ -3,18 +3,31 @@ package main
 import (
 	"fmt"
 	"playground/custommath"
+	"playground/user"
 )
 
 func main() {
 	var firstName string = "sorrawit"
 	var lastName string = "kwanja"
 	var age uint = 20
-
 	var message string = fmt.Sprintf("My name is %v %v. I am %v years old.", firstName, lastName, age)
-
 	fmt.Println(message)
 
 	fmt.Println(custommath.Add(5, 10))
+
+	john := user.Student{
+		Name:  "John Doe",
+		Year:  3,
+		Major: "computer science",
+	}
+	fmt.Println(john)
+	fmt.Println(john.Major)
+	fmt.Println(john.Year)
+	fmt.Println(john.Name)
+	// fmt.Println(john.Greeting()) <- error (no values) used as value
+	// happend when calling some function and pass in another function
+	// but the second function does not return anything (void)
+	john.Greeting()
 }
 
 // basic function syntax
