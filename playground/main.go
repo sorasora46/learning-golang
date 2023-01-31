@@ -1,21 +1,15 @@
 package main
 
 import "fmt"
-import "errors"
-import "playground/runner/calculator"
 
 func main() {
-    var firstName string = "sorrawit"
-    var lastName string = "kwanja"
-    var age uint = 20
+	var firstName string = "sorrawit"
+	var lastName string = "kwanja"
+	var age uint = 20
 
-    var message string = fmt.Sprintf("My name is %v %v. I am %v years old.", firstName, lastName, age)
+	var message string = fmt.Sprintf("My name is %v %v. I am %v years old.", firstName, lastName, age)
 
-    fmt.Println(message)
-
-    fmt.Println(calculator.Calculator(5, 10))
-
-
+	fmt.Println(message)
 }
 
 // basic function syntax
@@ -29,7 +23,6 @@ func main() {
 //     }
 //     return x / y, nil
 // }
-
 
 // Loop
 // arr := []int{1,2,3,4,5}
