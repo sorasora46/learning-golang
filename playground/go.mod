@@ -1,3 +1,3 @@
-module playground/runner
+module playground
 
 go 1.19

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"playground/custommath"
+)
 
 func main() {
 	var firstName string = "sorrawit"
@@ -10,6 +13,8 @@ func main() {
 	var message string = fmt.Sprintf("My name is %v %v. I am %v years old.", firstName, lastName, age)
 
 	fmt.Println(message)
+
+	fmt.Println(custommath.Add(5, 10))
 }
 
 // basic function syntax
