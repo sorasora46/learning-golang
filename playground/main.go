@@ -43,6 +43,13 @@ func main() {
 	fmt.Println(country["TH"])
 	currency := map[string]string{"$": "dollar", "฿": "baht"}
 	fmt.Println(currency)
+
+	value, key := currency["$"]
+	if key {
+		fmt.Println(value)
+	} else {
+		fmt.Println("Key not found")
+	}
 }
 
 // basic function syntax
