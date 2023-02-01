@@ -54,6 +54,8 @@ func main() {
 	for idx, val := range country {
 		fmt.Println("key = ", idx, "value = ", val)
 	}
+
+	fmt.Println(addNumbers(5, 13, 45, 123))
 }
 
 // basic function syntax
@@ -124,3 +126,12 @@ func main() {
 // arr5 := arr4[:1] // get elements from 0 to 1
 // arr6 := arr4[1:] // get elements from 1 to last
 // arr7 := arr4[1:2] // get elements from 1 to 1
+
+// variadic function (function that take unknown number of the same type)
+func addNumbers(numbers ...int) int {
+	var answer int = 0
+	for _, val := range numbers {
+		answer += val
+	}
+	return answer
+}
