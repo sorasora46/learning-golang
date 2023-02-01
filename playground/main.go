@@ -50,6 +50,10 @@ func main() {
 	} else {
 		fmt.Println("Key not found")
 	}
+
+	for idx, val := range country {
+		fmt.Println("key = ", idx, "value = ", val)
+	}
 }
 
 // basic function syntax
