@@ -32,6 +32,9 @@ func main() {
 	john.Greeting()
 
 	pyramid.Pyramid()
+
+	arr := []user.Student{john}
+	fmt.Println(arr)
 }
 
 // basic function syntax
