@@ -41,6 +41,8 @@ func main() {
 	country["JP"] = "Japan"
 	country["EN"] = "English"
 	fmt.Println(country["TH"])
+	currency := map[string]string{"$": "dollar", "฿": "baht"}
+	fmt.Println(currency)
 }
 
 // basic function syntax
