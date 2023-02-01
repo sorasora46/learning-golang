@@ -24,6 +24,7 @@ func main() {
 	fmt.Println(john.Major)
 	fmt.Println(john.Year)
 	fmt.Println(john.Name)
+	fmt.Printf("type of %v is %T\n", john.Name, john.Name)
 	// fmt.Println(john.Greeting()) <- error (no values) used as value
 	// happend when calling some function and pass in another function
 	// but the second function does not return anything (void)
