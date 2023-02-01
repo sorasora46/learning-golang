@@ -11,5 +11,5 @@ type Student struct {
 }
 
 func (s Student) Greeting() {
-	fmt.Printf("Hi! My name is %s", s.Name)
+	fmt.Printf("Hi! My name is %s\n", s.Name)
 }

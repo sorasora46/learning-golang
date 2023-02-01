@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"playground/custommath"
+	"playground/pyramid"
 	"playground/user"
 )
 
@@ -29,6 +30,8 @@ func main() {
 	// happend when calling some function and pass in another function
 	// but the second function does not return anything (void)
 	john.Greeting()
+
+	pyramid.Pyramid()
 }
 
 // basic function syntax
