@@ -113,14 +113,14 @@ func main() {
 // Slice (Dynamic array):
 // append return a new array (immutable)
 // var arr3 []uint
-// arr3 = arr3.append(33)
-// arr3 = arr3.append(99)
-// arr3 = arr3.append(55)
+// arr3 = append(arr3, 33)
+// arr3 = append(arr3, 99)
+// arr3 = append(arr3, 55)
 
 // arr4 := []uint
-// arr4 = arr4.append(88)
-// arr4 = arr4.append(22)
-// arr4 = arr4.append(11)
+// arr4 = append(arr4, 88)
+// arr4 = append(arr4, 22)
+// arr4 = append(arr4, 11)
 
 // syntax: slice[low:high]
 // arr5 := arr4[:1] // get elements from 0 to 1
