@@ -35,6 +35,12 @@ func main() {
 
 	arr := []user.Student{john}
 	fmt.Println(arr)
+
+	country := map[string]string{}
+	country["TH"] = "Thailand"
+	country["JP"] = "Japan"
+	country["EN"] = "English"
+	fmt.Println(country["TH"])
 }
 
 // basic function syntax
@@ -100,3 +106,8 @@ func main() {
 // arr4 = arr4.append(88)
 // arr4 = arr4.append(22)
 // arr4 = arr4.append(11)
+
+// syntax: slice[low:high]
+// arr5 := arr4[:1] // get elements from 0 to 1
+// arr6 := arr4[1:] // get elements from 1 to last
+// arr7 := arr4[1:2] // get elements from 1 to 1
